@@ -30,7 +30,6 @@ export class AppComponent {
   data_sentiment_trend;
 
   constructor() {
-    // Object.assign(this, { multi });
     this.data = JSON.parse(JSON.stringify(multi));
     this.data_face_analysis = this.data.emotions.face_analysis[0].emotions;
     this.data_true_emotions = this.data.emotions.true_emotions[0].true_emotions;
